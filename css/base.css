@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+:root {
+  /* grid-gutter */
+  --gutter: 20px;
+
+  /* font-weight start */
+  --fw-bold: 700;
+  --fw-semi-bold: 600;
+  --fw-medium: 500;
+  --fw-normal: 400;
+  --fw-light: 300;
+  /* font-weight end */
+
+  /* font-size start */
+  --fs-13: 13px;
+  --fs-14: 14px;
+  --fs-15: 15px;
+  --fs-20: 20px;
+  --fs-24: 24px;
+  --fs-30: 30px;
+  /* font-size end  */
+
+  /* color start */
+  --clr-black: #000000;
+  --clr-soft-gray: #D1D1D1;
+  --clr-light-gray: #4F4F4F;
+  --clr-neutral-gray: #4D4C4C;
+  --clr-medium-gray: #3D3C3C;
+  --clr-dark-gray: #0c0909;
+  --clr-light-white: #F0EFE6;
+  --clr-white: #ffffff;
+  --clr-blue: #00DFFD;
+  --clr-brown: #465251;
+  --clr-red: red;
+  /* color end */
+
+  /* border start */
+  --border-dark-gray: 1.15px solid var(--clr-dark-gray);
+  --border-light-gray: 1.15px solid #898888;
+  /* border end */
+
+  /* border-radius start */
+  --border-circle: 50%;
+  --border-radius: 5px;
+  /* border-radius end */
+
+  /* grid start */
+  --col-width: calc((100% - (11 * var(--gutter))) / 12);
+
+  /* grid end */
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  /* set 1rem equals to 10px */
+  font-size: 62.5%;
+}

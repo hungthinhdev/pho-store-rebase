@@ -1,0 +1,57 @@
+/* import page's component */
+@import url('./components/navigation.css');
+@import url('./components/footer.css');
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.site-path {
+  font-weight: var(--fw-semi-bold);
+  font-size: 1.5rem;
+  color: var(--clr-light-gray);
+  margin-bottom: 1rem;
+}
+
+.payment-info {
+  margin: 0 auto;
+  width: 710px;
+  height: 582px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border: 2px solid #4F4F4F;
+  border-radius: 5px;
+}
+
+.payment-info .payment-status {
+  font-size: 36px;
+  font-weight: bold;
+  color: #3D3C3C;
+  text-transform: uppercase;
+}
+
+.payment-info .payment-hint {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #3D3C3C;
+}
+
+.payment-info .payment-redirect-btn {
+  font-size: 24px;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #00DEFC;
+  font-weight: 600;
+  background: #DEDEDE;
+  border-radius: 5px;
+}
+

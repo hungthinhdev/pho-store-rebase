@@ -1,0 +1,124 @@
+/* import base */
+@import url('./base.css');
+
+/* import page's component */
+@import url('./components/navigation.css');
+@import url('./components/footer.css');
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+header .header__logo {
+  width: 14rem;
+  height: 7.9rem;
+  object-fit: contain;
+  object-position: center;
+  aspect-ratio: 16 / 9;
+}
+
+main.container .site {
+  font-size: 1.5rem;
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-light-gray);
+  margin-bottom: 3.6rem;
+}
+
+.access-form {
+  width: 71rem;
+  border: var(--border-light-gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem 1.5rem 7rem;
+}
+
+.access-form__title,
+.register-form {
+  font-size: 2.4rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-medium-gray);
+  margin-bottom: 4.4rem;
+  text-align: center;
+  padding-right: 2.5rem;
+}
+
+.access-form__input-group {
+  padding: 0 8rem;
+  display: flex;
+  gap: var(--gutter);
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.access-form__input-group > * {
+  flex: 1;
+  border: var(--border-light-gray);
+  border-radius: var(--border-radius);
+}
+
+.access-form__input-group input {
+  padding: .75rem 1rem;
+  font-size: 1.2rem;
+  font-weight: var(--fw-normal);
+}
+
+.access-form__input-group .fb-sign-in-btn,
+.access-form__input-group .gg-sign-in-btn {
+  padding-left: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  color: var(--clr-light-gray);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.access-form__input-group:nth-of-type(2) {
+  position: relative;
+}
+
+.access-form__input-group:nth-of-type(2) span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 42.5%;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.access-form__input-group:nth-of-type(2) .btn-forgot-pass {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 36%;
+  text-decoration: none;
+  font-size: 8px;
+  color: #4F4F4F;
+  border: none;
+}
+
+.access-form .login-btn {
+  display: inline-block;
+  width: calc(4 * var(--col-width) + var(--gutter));
+  font-size: 2.4rem;
+  font-weight: var(--fw-bold);
+  text-transform: capitalize;
+  color: var(--clr-white);
+  background-color: var(--clr-blue);
+}
+
+main.container .ending-title {
+  margin-top: 19rem;
+  margin-bottom: 8.9rem;
+  font-size: 2.4rem;
+  color: var(--clr-light-gray);
+}

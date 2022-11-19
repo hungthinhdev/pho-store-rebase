@@ -1,0 +1,128 @@
+/* import base */
+@import url('./base.css');
+
+/* import page's component */
+@import url('./components/navigation.css');
+@import url('./components/footer.css');
+
+main.container .site {
+  font-size: 1.5rem;
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-light-gray);
+  margin-bottom: 3.6rem;
+}
+
+.register-form {
+  width: 710px;
+  padding: 1.5rem;
+  border: var(--border-light-gray);
+  border-radius: var(--border-radius);
+  margin-bottom: 5rem;
+}
+
+main .ending-title {
+  margin-bottom: 8.9rem;
+  font-size: 2.4rem;
+  color: var(--clr-light-gray);
+}
+
+.register-form__title {
+  text-align: center;
+  margin-bottom: 4.4rem;
+  font-size: 2.4rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-medium-gray);
+  padding-right: 2.5rem;
+}
+
+.register-form__input-group {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gutter);
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.register-form__input-group > * {
+  flex: 1;
+  border: var(--border-light-gray);
+  border-radius: var(--border-radius);
+}
+
+.register-form input {
+  padding: .75rem 1rem;
+  font-size: 1.2rem;
+  font-weight: var(--fw-normal);
+}
+
+.register-form input[name="password"],
+.register-form input[name="email"] {
+  width: calc((100% - var(--gutter)) / 2 - 1.5rem);
+  display: block;
+  margin-bottom: 1.25rem;
+  border: var(--border-light-gray);
+  border-radius: var(--border-radius);
+}
+
+.fb-sign-in-btn, 
+.gg-sign-in-btn {
+  align-self: stretch;
+  padding-left: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  color: var(--clr-light-gray);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.register-form__input-group:has(input[name="password"]) {
+  position: relative;
+  width: calc((100% - var(--gutter)) / 2 - 1.5rem);
+}
+
+.register-form__input-group:has(input[name="password"]) span {
+  position: absolute;
+  font-size: 1.65rem;
+  top: 35%;
+  transform: translateY(-50%);
+  right: 5px;
+  background: #fff;
+  color: #4F4F4F;
+  cursor: pointer;
+}
+
+.register-form__input-group:has(input[name="password"]) i {
+  color: #4F4F4F;
+}
+
+.register-form__input-group:has(input[name="password"])::before {
+  content: "At least 8 characters, 1 uppercase letter, 1 number & 1 symbol";
+  position: absolute;
+  top: 85%;
+  font-size: 8px;
+}
+
+.register-form .register-btn {
+  display: inline-block;
+  width: calc(4 * var(--col-width) + var(--gutter));
+  font-size: 2.4rem;
+  font-weight: var(--fw-bold);
+  text-transform: capitalize;
+  color: var(--clr-white);
+  background-color: var(--clr-blue);
+  margin-bottom: 6rem;
+}
+
+.register-policy {
+  text-align: center;
+  font-size: 7px;
+  margin-bottom: 5rem;
+}
+
+.register-policy span {
+  font-weight: bold;
+}
