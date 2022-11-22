@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/checkout.css">
   <title>Phố Store</title>
 </head>
 <body>
@@ -77,7 +78,92 @@
 
   <!-- main content start -->
   <main class="container">
+    <p class="site-path">Home / Buying</p>
+    <div class="main-content">
+      <div class="left">
+        <form action="" class="shipping">
+          <h1 class="shipping__title">shipping address</h1>
+          <div class="shipping-group">
+            <div class="d-flex" style="gap: var(--gutter);">
+              <input type="text" placeholder="First Name *">
+              <input type="text" placeholder="Last Name *">
+            </div>
+            <input type="text" name="street" id="street" placeholder="Street Number/Street Name *">
+            <input type="text" name="province" id="province" placeholder="Province, District, Ward *">
+          </div>
 
+          <h1 class="shipping__title">arriving</h1>
+          <div class="arriving-group">
+            <p class="d-flex flex-row justify-content-between">
+              <span class="text-uppercase font-weight-bold">standard</span>
+              <span class="text-uppercase">free</span>
+            </p>
+            <p>GHN (Standard delivery)</p>
+          </div>
+
+          <h1 class="shipping__title">contact information</h1>
+          <div class="contact-group">
+            <input type="email" placeholder="Email *" name="email">
+            <input type="password" placeholder="Phone number *" name="password">
+          </div>
+
+          <h1 class="shipping__title">pay method</h1>
+          <div class="method-group">
+            <div class="input-group">
+              <input type="radio" name="payment-method">
+              <label for="pay-by-cash" class="text-uppercase">cash on delivery</label>
+            </div>
+            <div class="input-group">
+              <input type="radio" name="payment-method">
+              <label for="pay-by-credit" class="text-uppercase">credit/debit card</label>
+            </div>
+          </div>
+
+          <a href="#" class="shipping__order-btn">place order</a>
+        </form>
+      </div>
+      <div class="right">
+        <div class="products">
+          <div class="products-title">
+            <span>Items</span>
+            <span>Price</span>
+            <span>Amount</span>
+          </div>
+          <div class="product-list">
+            <div class="product">
+              <div class="product__name">
+                <span>Jordan 1 Retro High Dior</span>
+                <span>Condition : New / Size : EU 42,5</span>
+                <img src="./images/fake-img/pexels-photo-1070360.jpeg" alt="">
+              </div>
+              <div class="product__price">
+                <span>$</span>9,999
+              </div>
+              <div class="product__amount">1</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-summary">
+          <h1 class="text-uppercase">order summary</h1>
+          <div class="order-info">
+            <span>Original Price</span>
+            <span><span class="font-weight-bold">$</span> 9.999</span>
+          </div>
+          <div class="order-info">
+            <span>DELIVERY</span>
+            <span>FREE</span>
+          </div>
+          <div class="order-info">
+            <span class="font-weight-bold">TOTAL</span>
+            <span><span class="font-weight-bold">$</span> 9.999</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="end-title">
+      We Verify Every Item. Every Time.
+    </p>
   </main>
   <!-- main content end -->
 
